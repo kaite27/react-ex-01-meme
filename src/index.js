@@ -1,12 +1,6 @@
-import React from 'react';
+import React from 'react'; // 리액트 모듈 자체는 react 
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.scss';
+import App from './App'; // 파일 디렉션을 정확하게 알려줄것 ./
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render( < App / > , document.getElementById('root'));
