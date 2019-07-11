@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import TodoList from "./components/TodoList";
+import Footer from "./components/Footer";
+import TimeAlert from "./components/TimeAlert";
+import Joke from "./components/Joke";
+
+export default class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <TimeAlert />
+        <TodoList />
+        <Footer />
+        <Joke data={{ question: "How old are you", punchline: "Shut up" }} />
+        <Joke
+          data={{
+            question: "How long have you lived in Paris",
+            punchline: "1 year"
+          }}
+        />
+        <Joke data={{ punchline: "20" }} />
+        <Joke data={{ question: "How old are you4", punchline: "23" }} />
+        <Joke data={{ question: "How old are you5", punchline: "26" }} />
+      </React.Fragment>
+    );
+  }
 }
 
-export default App;
+// function App() {
+//   return (
+//     <React.Fragment>
+//       <PlaceList />
+//       <Footer />
+//     </React.Fragment>
+//   );
+// }
+
+// export default App;
