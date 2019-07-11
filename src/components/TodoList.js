@@ -18,7 +18,7 @@ function PlaceList() {
           <li>
             <input type="checkbox" />
             Programming Class
-          </li>
+          </li>     
           <li>
             <input type="checkbox" />
             French Class
